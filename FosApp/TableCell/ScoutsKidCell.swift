@@ -11,10 +11,6 @@ import UIKit
 class ScoutsKidCell: UITableViewCell {
     
     @IBOutlet weak var scoutsKidName: UITextField!
-
-    @IBAction func checkBoxTapped(_ sender: UIButton){
-        sender.isSelected = !sender.isSelected
-    }
     
     @IBOutlet weak var aanwezig: UIButton!
     

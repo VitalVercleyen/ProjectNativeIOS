@@ -22,6 +22,10 @@ class FirstViewController: UIViewController {
         tableView.dataSource = self
     }
     
+    @IBAction func checkBoxTapped(_ sender: UIButton){
+        sender.isSelected = !sender.isSelected
+    }
+    
     func createArray() -> [ScoutsKid] {
         var tempScoutsKids: [ScoutsKid] = []
         

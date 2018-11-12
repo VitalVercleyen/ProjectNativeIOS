@@ -59,8 +59,7 @@
                                                             <state key="normal" image="UncheckedBox"/>
                                                             <state key="selected" image="checkedBox"/>
                                                             <connections>
-                                                                <action selector="aanwezigCheckBox:" destination="7Pe-ga-wkt" eventType="touchUpInside" id="21v-zK-3bc"/>
-                                                                <action selector="checkBoxTapped:" destination="7Pe-ga-wkt" eventType="touchUpInside" id="OaR-Fs-dht"/>
+                                                                <action selector="checkBoxTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Yps-By-sXL"/>
                                                             </connections>
                                                         </button>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5gl-Oa-DWY">
@@ -73,8 +72,7 @@
                                                             <state key="normal" image="UncheckedBox"/>
                                                             <state key="selected" image="checkedBox"/>
                                                             <connections>
-                                                                <action selector="checkBoxTapped:" destination="7Pe-ga-wkt" eventType="touchUpInside" id="kbv-7P-1oN"/>
-                                                                <action selector="vieruurtjeCheckBox:" destination="7Pe-ga-wkt" eventType="touchUpInside" id="MGZ-Ia-KSi"/>
+                                                                <action selector="checkBoxTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="5se-19-Ygc"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
