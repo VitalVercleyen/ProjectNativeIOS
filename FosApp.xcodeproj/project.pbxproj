@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2150A192199893200F4D498 /* ScoutsKidCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2150A182199893200F4D498 /* ScoutsKidCell.swift */; };
+		B2150A1E21998BED00F4D498 /* ScoutsKids.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2150A1D21998BED00F4D498 /* ScoutsKids.swift */; };
 		B247A5A0218E472500A97B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A59F218E472500A97B6E /* AppDelegate.swift */; };
 		B247A5A2218E472600A97B6E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5A1218E472600A97B6E /* FirstViewController.swift */; };
 		B247A5A4218E472600A97B6E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5A3218E472600A97B6E /* SecondViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2150A182199893200F4D498 /* ScoutsKidCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutsKidCell.swift; sourceTree = "<group>"; };
+		B2150A1D21998BED00F4D498 /* ScoutsKids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutsKids.swift; sourceTree = "<group>"; };
 		B247A59C218E472500A97B6E /* FosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B247A59F218E472500A97B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B247A5A1218E472600A97B6E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2150A172199891800F4D498 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				B2150A182199893200F4D498 /* ScoutsKidCell.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		B2150A1A21998B6100F4D498 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B2150A1D21998BED00F4D498 /* ScoutsKids.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		B247A593218E472500A97B6E = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +121,8 @@
 		B247A59E218E472500A97B6E /* FosApp */ = {
 			isa = PBXGroup;
 			children = (
+				B2150A1A21998B6100F4D498 /* Domain */,
+				B2150A172199891800F4D498 /* TableCell */,
 				B247A59F218E472500A97B6E /* AppDelegate.swift */,
 				B247A5A1218E472600A97B6E /* FirstViewController.swift */,
 				B247A5A3218E472600A97B6E /* SecondViewController.swift */,
@@ -264,8 +286,10 @@
 			files = (
 				B247A5A4218E472600A97B6E /* SecondViewController.swift in Sources */,
 				B247A5A0218E472500A97B6E /* AppDelegate.swift in Sources */,
+				B2150A192199893200F4D498 /* ScoutsKidCell.swift in Sources */,
 				B247A5D0218E48A700A97B6E /* thirdViewController.swift in Sources */,
 				B247A5A2218E472600A97B6E /* FirstViewController.swift in Sources */,
+				B2150A1E21998BED00F4D498 /* ScoutsKids.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
