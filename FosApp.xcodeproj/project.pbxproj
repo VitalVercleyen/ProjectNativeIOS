@@ -17,6 +17,7 @@
 		B247A5B7218E472B00A97B6E /* FosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5B6218E472B00A97B6E /* FosAppTests.swift */; };
 		B247A5C2218E472B00A97B6E /* FosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5C1218E472B00A97B6E /* FosAppUITests.swift */; };
 		B247A5D0218E48A700A97B6E /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5CF218E48A700A97B6E /* thirdViewController.swift */; };
+		B2E99FCF21D6574F006AC440 /* PresenceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FCE21D6574F006AC440 /* PresenceListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B247A5C1218E472B00A97B6E /* FosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FosAppUITests.swift; sourceTree = "<group>"; };
 		B247A5C3218E472B00A97B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B247A5CF218E48A700A97B6E /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
+		B2E99FCE21D6574F006AC440 /* PresenceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenceListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +121,11 @@
 		B247A59E218E472500A97B6E /* FosApp */ = {
 			isa = PBXGroup;
 			children = (
+				B2E99FCD21D65714006AC440 /* Viewmodels */,
+				B2E99FCC21D65650006AC440 /* ViewControllers */,
 				B2150A1A21998B6100F4D498 /* Domain */,
 				B2150A172199891800F4D498 /* TableCell */,
 				B247A59F218E472500A97B6E /* AppDelegate.swift */,
-				B247A5A1218E472600A97B6E /* FirstViewController.swift */,
 				B247A5A5218E472600A97B6E /* Main.storyboard */,
 				B247A5A8218E472A00A97B6E /* Assets.xcassets */,
 				B247A5AA218E472A00A97B6E /* LaunchScreen.storyboard */,
@@ -148,6 +151,22 @@
 				B247A5C3218E472B00A97B6E /* Info.plist */,
 			);
 			path = FosAppUITests;
+			sourceTree = "<group>";
+		};
+		B2E99FCC21D65650006AC440 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B247A5A1218E472600A97B6E /* FirstViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2E99FCD21D65714006AC440 /* Viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				B2E99FCE21D6574F006AC440 /* PresenceListViewModel.swift */,
+			);
+			path = Viewmodels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +303,7 @@
 				B247A5A0218E472500A97B6E /* AppDelegate.swift in Sources */,
 				B2150A192199893200F4D498 /* ScoutsKidCell.swift in Sources */,
 				B247A5D0218E48A700A97B6E /* thirdViewController.swift in Sources */,
+				B2E99FCF21D6574F006AC440 /* PresenceListViewModel.swift in Sources */,
 				B247A5A2218E472600A97B6E /* FirstViewController.swift in Sources */,
 				B2150A1E21998BED00F4D498 /* ScoutsKids.swift in Sources */,
 			);

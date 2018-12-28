@@ -1,29 +1,19 @@
 //
-//  FirstViewController.swift
+//  PresenceListViewModel.swift
 //  FosApp
 //
-//  Created by Aya Coppens on 03/11/2018.
+//  Created by Aya Coppens on 28/12/2018.
 //  Copyright © 2018 Vital Vercleyen. All rights reserved.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class PresenceListViewModel{
     
     var scoutsKids: [ScoutsKid] = []
-   
-    @IBOutlet weak var tableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    init(){
         scoutsKids = createArray()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
-    
-    @IBAction func checkBoxTapped(_ sender: UIButton){
-        sender.isSelected = !sender.isSelected
     }
     
     func createArray() -> [ScoutsKid] {
@@ -40,26 +30,9 @@ class FirstViewController: UIViewController {
         tempScoutsKids.append(ScoutsKid3)
         tempScoutsKids.append(ScoutsKid4)
         tempScoutsKids.append(ScoutsKid5)
-
+        
         return tempScoutsKids
-
-    }
-}
-
-extension FirstViewController : UITableViewDataSource, UITableViewDelegate{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return scoutsKids.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let scoutsKid = scoutsKids[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ScoutsKidCell") as! ScoutsKidCell
         
-        cell.setData(scoutsKid: scoutsKid)
-        
-        return cell
     }
-    
     
 }
-
