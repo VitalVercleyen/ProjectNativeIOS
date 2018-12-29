@@ -21,6 +21,7 @@
 		B2E99FD121D77D78006AC440 /* AddKidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FD021D77D78006AC440 /* AddKidViewController.swift */; };
 		B2E99FD321D791BC006AC440 /* KidInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FD221D791BC006AC440 /* KidInfoViewController.swift */; };
 		B2E99FD621D7A9B2006AC440 /* Datahandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FD521D7A9B2006AC440 /* Datahandler.swift */; };
+		B2E99FD821D7C1A7006AC440 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E99FD721D7C1A7006AC440 /* GoogleService-Info.plist */; };
 		E35AF59B23033136461E3923 /* Pods_FosAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3485A84E60723351BBEE1 /* Pods_FosAppUITests.framework */; };
 		FB4784CA8CF069F96540B049 /* Pods_FosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232231B51183AB8B9A5FEE7E /* Pods_FosApp.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		B2E99FD021D77D78006AC440 /* AddKidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKidViewController.swift; sourceTree = "<group>"; };
 		B2E99FD221D791BC006AC440 /* KidInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidInfoViewController.swift; sourceTree = "<group>"; };
 		B2E99FD521D7A9B2006AC440 /* Datahandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datahandler.swift; sourceTree = "<group>"; };
+		B2E99FD721D7C1A7006AC440 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDFF7F44A9091C70134D82B3 /* Pods-FosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FosApp/Pods-FosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C0EF602F95A7D541155B3E84 /* Pods-FosAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FosAppUITests/Pods-FosAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CDDFCB5E122DAA4DC3485C7C /* Pods-FosAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FosAppUITests/Pods-FosAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				B2150A172199891800F4D498 /* TableCell */,
 				B247A59F218E472500A97B6E /* AppDelegate.swift */,
 				B247A5A5218E472600A97B6E /* Main.storyboard */,
+				B2E99FD721D7C1A7006AC440 /* GoogleService-Info.plist */,
 				B247A5A8218E472A00A97B6E /* Assets.xcassets */,
 				B247A5AA218E472A00A97B6E /* LaunchScreen.storyboard */,
 				B247A5AD218E472A00A97B6E /* Info.plist */,
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B247A5AC218E472A00A97B6E /* LaunchScreen.storyboard in Resources */,
+				B2E99FD821D7C1A7006AC440 /* GoogleService-Info.plist in Resources */,
 				B247A5A9218E472A00A97B6E /* Assets.xcassets in Resources */,
 				B247A5A7218E472600A97B6E /* Main.storyboard in Resources */,
 			);
@@ -407,14 +411,30 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FosApp/Pods-FosApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

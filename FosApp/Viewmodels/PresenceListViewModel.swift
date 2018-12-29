@@ -11,14 +11,17 @@ import UIKit
 class PresenceListViewModel{
     
     var scoutsKids: [ScoutsKid] = []
+    var dataHandler : Datahandler
     
     init(){
-        scoutsKids = createArray()
+        
+        dataHandler = Datahandler()
+        scoutsKids = getKids()
     }
     
     
     func addKid(name : String, gender : String){
-        let scoutsKid = ScoutsKid(name : name, gender : gender, aanwezig : false, vierUurtje : false)
+        let scoutsKid = ScoutsKid(id : "", name : name, gender : gender, aanwezig : false, vierUurtje : false)
         print(name)
         scoutsKids.append(scoutsKid)
         
@@ -33,12 +36,16 @@ class PresenceListViewModel{
         scoutsKids.remove(at: scoutsKid)
     }
     
+    func getKids() -> [ScoutsKid] {
+        return dataHandler.getKids()
+    }
     
     
-    func createArray() -> [ScoutsKid] {
+    
+    /*func createArray() -> [ScoutsKid] {
         var tempScoutsKids: [ScoutsKid] = []
         
-        let ScoutsKid1 = ScoutsKid(name : "Aya Coppens", gender : "girl", aanwezig: false, vierUurtje : false)
+        let ScoutsKid1 = ScoutsKid(idname : "Aya Coppens", gender : "girl", aanwezig: false, vierUurtje : false)
         let ScoutsKid2 = ScoutsKid(name :"Timon Vermeers", gender :"boy", aanwezig :false, vierUurtje :false)
         let ScoutsKid3 = ScoutsKid(name : "Anton De Man", gender :"xgender", aanwezig :false,vierUurtje : false)
         let ScoutsKid4 = ScoutsKid(name :"Ilias Ikadouran", gender :"boy", aanwezig :false, vierUurtje :false)
@@ -52,6 +59,6 @@ class PresenceListViewModel{
         
         return tempScoutsKids
         
-    }
+    }*/
     
 }

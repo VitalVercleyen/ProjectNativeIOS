@@ -41,11 +41,11 @@
                                                 <rect key="frame" x="0.0" y="28" width="414" height="51"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" tableViewCell="7Pe-ga-wkt" id="6Jq-lo-Jdl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Bw-Qo-lyY">
-                                                            <rect key="frame" x="55" y="15" width="232" height="17"/>
+                                                            <rect key="frame" x="57" y="15" width="222" height="17"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>

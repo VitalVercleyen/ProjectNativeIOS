@@ -9,6 +9,7 @@ target 'FosApp' do
   # Pods for FosApp
 
   pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 
 
 

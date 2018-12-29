@@ -26,7 +26,7 @@ class AddKidViewController : UIViewController {
                 viewmodel.addKid(name: name.text ?? "kid", gender: genderMap[sender.tag]!)
                 performSegue(withIdentifier: "presenceList", sender: self)
             } else {
-                viewmodel.
+               
             }
             
         }
