@@ -1,0 +1,6 @@
+framework module Pods_FosApp {
+  umbrella header "Pods-FosApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

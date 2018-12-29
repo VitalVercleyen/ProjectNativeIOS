@@ -1,0 +1,6 @@
+framework module Pods_FosAppUITests {
+  umbrella header "Pods-FosAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

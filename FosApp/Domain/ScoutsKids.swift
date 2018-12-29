@@ -10,20 +10,20 @@ import Foundation
 import UIKit
 
 class ScoutsKid {
+    let id : String
     let image : UIImage
     let name : String
     let gender : String
-    let tak : String
     let aanwezig : Bool
     let vierUurtje: Bool
-    var genderMap = ["boy" : #imageLiteral(resourceName: "boy"), "girl" : #imageLiteral(resourceName: "girl"), "xgender" : #imageLiteral(resourceName: "xgender")]
+    let genderMap = ["boy" : #imageLiteral(resourceName: "boy"), "girl" : #imageLiteral(resourceName: "girl"), "xgender" : #imageLiteral(resourceName: "xgender")]
 
     
-    init(name: String, gender: String, tak: String, aanwezig:Bool, vierUurtje : Bool){
+    init(id : String, name: String, gender: String, aanwezig:Bool, vierUurtje : Bool){
+        self.id = id
         self.image = genderMap[gender]!
         self.name = name
         self.gender = gender
-        self.tak = tak
         self.aanwezig = aanwezig
         self.vierUurtje = vierUurtje
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87F9ED13A12FEB1412095667 /* Pods_FosAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF7B26833A62DE0E7FBA2CD /* Pods_FosAppTests.framework */; };
 		B2150A192199893200F4D498 /* ScoutsKidCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2150A182199893200F4D498 /* ScoutsKidCell.swift */; };
 		B2150A1E21998BED00F4D498 /* ScoutsKids.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2150A1D21998BED00F4D498 /* ScoutsKids.swift */; };
 		B247A5A0218E472500A97B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A59F218E472500A97B6E /* AppDelegate.swift */; };
@@ -16,8 +17,12 @@
 		B247A5AC218E472A00A97B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B247A5AA218E472A00A97B6E /* LaunchScreen.storyboard */; };
 		B247A5B7218E472B00A97B6E /* FosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5B6218E472B00A97B6E /* FosAppTests.swift */; };
 		B247A5C2218E472B00A97B6E /* FosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5C1218E472B00A97B6E /* FosAppUITests.swift */; };
-		B247A5D0218E48A700A97B6E /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5CF218E48A700A97B6E /* thirdViewController.swift */; };
 		B2E99FCF21D6574F006AC440 /* PresenceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FCE21D6574F006AC440 /* PresenceListViewModel.swift */; };
+		B2E99FD121D77D78006AC440 /* AddKidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FD021D77D78006AC440 /* AddKidViewController.swift */; };
+		B2E99FD321D791BC006AC440 /* KidInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FD221D791BC006AC440 /* KidInfoViewController.swift */; };
+		B2E99FD621D7A9B2006AC440 /* Datahandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FD521D7A9B2006AC440 /* Datahandler.swift */; };
+		E35AF59B23033136461E3923 /* Pods_FosAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3485A84E60723351BBEE1 /* Pods_FosAppUITests.framework */; };
+		FB4784CA8CF069F96540B049 /* Pods_FosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232231B51183AB8B9A5FEE7E /* Pods_FosApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		232231B51183AB8B9A5FEE7E /* Pods_FosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B92A5191C897A36201E8C1C /* Pods-FosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FosAppTests/Pods-FosAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A13882976D28DB26135E44E /* Pods-FosAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FosAppTests/Pods-FosAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEF3485A84E60723351BBEE1 /* Pods_FosAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FosAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2150A182199893200F4D498 /* ScoutsKidCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutsKidCell.swift; sourceTree = "<group>"; };
 		B2150A1D21998BED00F4D498 /* ScoutsKids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutsKids.swift; sourceTree = "<group>"; };
 		B247A59C218E472500A97B6E /* FosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +62,15 @@
 		B247A5BD218E472B00A97B6E /* FosAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FosAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B247A5C1218E472B00A97B6E /* FosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FosAppUITests.swift; sourceTree = "<group>"; };
 		B247A5C3218E472B00A97B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B247A5CF218E48A700A97B6E /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		B2E99FCE21D6574F006AC440 /* PresenceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenceListViewModel.swift; sourceTree = "<group>"; };
+		B2E99FD021D77D78006AC440 /* AddKidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKidViewController.swift; sourceTree = "<group>"; };
+		B2E99FD221D791BC006AC440 /* KidInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidInfoViewController.swift; sourceTree = "<group>"; };
+		B2E99FD521D7A9B2006AC440 /* Datahandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datahandler.swift; sourceTree = "<group>"; };
+		BDFF7F44A9091C70134D82B3 /* Pods-FosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FosApp/Pods-FosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C0EF602F95A7D541155B3E84 /* Pods-FosAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FosAppUITests/Pods-FosAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CDDFCB5E122DAA4DC3485C7C /* Pods-FosAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FosAppUITests/Pods-FosAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6D3C1E3C7843D3775FBAD0D /* Pods-FosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FosApp/Pods-FosApp.release.xcconfig"; sourceTree = "<group>"; };
+		FEF7B26833A62DE0E7FBA2CD /* Pods_FosAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FosAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4784CA8CF069F96540B049 /* Pods_FosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F9ED13A12FEB1412095667 /* Pods_FosAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35AF59B23033136461E3923 /* Pods_FosAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E70ECDDAC8621633D8D5B31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				232231B51183AB8B9A5FEE7E /* Pods_FosApp.framework */,
+				FEF7B26833A62DE0E7FBA2CD /* Pods_FosAppTests.framework */,
+				AEF3485A84E60723351BBEE1 /* Pods_FosAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CC4C8568B45A8675319115D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDFF7F44A9091C70134D82B3 /* Pods-FosApp.debug.xcconfig */,
+				D6D3C1E3C7843D3775FBAD0D /* Pods-FosApp.release.xcconfig */,
+				8A13882976D28DB26135E44E /* Pods-FosAppTests.debug.xcconfig */,
+				5B92A5191C897A36201E8C1C /* Pods-FosAppTests.release.xcconfig */,
+				CDDFCB5E122DAA4DC3485C7C /* Pods-FosAppUITests.debug.xcconfig */,
+				C0EF602F95A7D541155B3E84 /* Pods-FosAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B2150A172199891800F4D498 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +147,8 @@
 				B247A5B5218E472B00A97B6E /* FosAppTests */,
 				B247A5C0218E472B00A97B6E /* FosAppUITests */,
 				B247A59D218E472500A97B6E /* Products */,
+				5CC4C8568B45A8675319115D /* Pods */,
+				2E70ECDDAC8621633D8D5B31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +165,7 @@
 		B247A59E218E472500A97B6E /* FosApp */ = {
 			isa = PBXGroup;
 			children = (
+				B2E99FD421D7A997006AC440 /* Data */,
 				B2E99FCD21D65714006AC440 /* Viewmodels */,
 				B2E99FCC21D65650006AC440 /* ViewControllers */,
 				B2150A1A21998B6100F4D498 /* Domain */,
@@ -130,7 +175,6 @@
 				B247A5A8218E472A00A97B6E /* Assets.xcassets */,
 				B247A5AA218E472A00A97B6E /* LaunchScreen.storyboard */,
 				B247A5AD218E472A00A97B6E /* Info.plist */,
-				B247A5CF218E48A700A97B6E /* thirdViewController.swift */,
 			);
 			path = FosApp;
 			sourceTree = "<group>";
@@ -157,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				B247A5A1218E472600A97B6E /* FirstViewController.swift */,
+				B2E99FD021D77D78006AC440 /* AddKidViewController.swift */,
+				B2E99FD221D791BC006AC440 /* KidInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -169,6 +215,14 @@
 			path = Viewmodels;
 			sourceTree = "<group>";
 		};
+		B2E99FD421D7A997006AC440 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B2E99FD521D7A9B2006AC440 /* Datahandler.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B247A5C6218E472B00A97B6E /* Build configuration list for PBXNativeTarget "FosApp" */;
 			buildPhases = (
+				ADF421C12DC3D0ECD0394E15 /* [CP] Check Pods Manifest.lock */,
 				B247A598218E472500A97B6E /* Sources */,
 				B247A599218E472500A97B6E /* Frameworks */,
 				B247A59A218E472500A97B6E /* Resources */,
+				B8E1B1452BAD0E836A0C84A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B247A5C9218E472B00A97B6E /* Build configuration list for PBXNativeTarget "FosAppTests" */;
 			buildPhases = (
+				DF47A203B0CF739386DBCC8E /* [CP] Check Pods Manifest.lock */,
 				B247A5AE218E472B00A97B6E /* Sources */,
 				B247A5AF218E472B00A97B6E /* Frameworks */,
 				B247A5B0218E472B00A97B6E /* Resources */,
@@ -211,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B247A5CC218E472B00A97B6E /* Build configuration list for PBXNativeTarget "FosAppUITests" */;
 			buildPhases = (
+				15C45FDFA6CF2BBB7BE793F6 /* [CP] Check Pods Manifest.lock */,
 				B247A5B9218E472B00A97B6E /* Sources */,
 				B247A5BA218E472B00A97B6E /* Frameworks */,
 				B247A5BB218E472B00A97B6E /* Resources */,
@@ -295,15 +353,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15C45FDFA6CF2BBB7BE793F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FosAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADF421C12DC3D0ECD0394E15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FosApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E1B1452BAD0E836A0C84A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FosApp/Pods-FosApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FosApp/Pods-FosApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF47A203B0CF739386DBCC8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FosAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B247A598218E472500A97B6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B247A5A0218E472500A97B6E /* AppDelegate.swift in Sources */,
+				B2E99FD321D791BC006AC440 /* KidInfoViewController.swift in Sources */,
 				B2150A192199893200F4D498 /* ScoutsKidCell.swift in Sources */,
-				B247A5D0218E48A700A97B6E /* thirdViewController.swift in Sources */,
 				B2E99FCF21D6574F006AC440 /* PresenceListViewModel.swift in Sources */,
+				B2E99FD121D77D78006AC440 /* AddKidViewController.swift in Sources */,
+				B2E99FD621D7A9B2006AC440 /* Datahandler.swift in Sources */,
 				B247A5A2218E472600A97B6E /* FirstViewController.swift in Sources */,
 				B2150A1E21998BED00F4D498 /* ScoutsKids.swift in Sources */,
 			);
@@ -478,6 +631,7 @@
 		};
 		B247A5C7218E472B00A97B6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDFF7F44A9091C70134D82B3 /* Pods-FosApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -495,6 +649,7 @@
 		};
 		B247A5C8218E472B00A97B6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D3C1E3C7843D3775FBAD0D /* Pods-FosApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +667,7 @@
 		};
 		B247A5CA218E472B00A97B6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A13882976D28DB26135E44E /* Pods-FosAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +688,7 @@
 		};
 		B247A5CB218E472B00A97B6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B92A5191C897A36201E8C1C /* Pods-FosAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +709,7 @@
 		};
 		B247A5CD218E472B00A97B6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDDFCB5E122DAA4DC3485C7C /* Pods-FosAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -571,6 +729,7 @@
 		};
 		B247A5CE218E472B00A97B6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0EF602F95A7D541155B3E84 /* Pods-FosAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

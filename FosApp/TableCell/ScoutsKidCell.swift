@@ -18,6 +18,7 @@ class ScoutsKidCell: UITableViewCell {
     
     @IBOutlet weak var portrait: UIImageView!
     
+        
     func setData(scoutsKid : ScoutsKid){
         portrait.image = scoutsKid.image
         scoutsKidName.text = scoutsKid.name

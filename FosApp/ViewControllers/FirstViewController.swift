@@ -8,6 +8,10 @@
 
 import UIKit
 
+let viewmodel : PresenceListViewModel = PresenceListViewModel()
+var selectedKid : ScoutsKid? = nil
+var selectedIndex : Int? = nil
+
 class FirstViewController: UIViewController, UISearchBarDelegate {
     
     
@@ -15,30 +19,35 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
     let searchController = UISearchController(searchResultsController: nil)
     var scoutsKids: [ScoutsKid] = []
     var filteredScoutsKids : [ScoutsKid] = []
-    var viewmodel : PresenceListViewModel = PresenceListViewModel()
+    
    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        selectedKid = nil
+        selectedIndex = nil
         scoutsKids = viewmodel.scoutsKids
         filteredScoutsKids = scoutsKids
         searchbar.barTintColor = .white
         searchbar.delegate = self
+        navigationItem.hidesBackButton = true
         
         tableView.delegate = self
         tableView.dataSource = self
     }
     
-    @IBAction func aanwezigCheckBoxTapped(_ sender: UIButton){
+   
+    
+    @IBAction func opslaan(_ sender: Any) {
+    }
+    
+    
+    @IBAction func checkBoxTapped(_ sender: UIButton){
         sender.isSelected = !sender.isSelected
     }
     
     
-    @IBAction func vieruurtjeCheckBoxTapped(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
-        
-    }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText : String){
         guard !searchText.isEmpty else {
@@ -69,6 +78,12 @@ extension FirstViewController : UITableViewDataSource, UITableViewDelegate{
         cell.setData(scoutsKid: scoutsKid)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedKid = scoutsKids[indexPath.row]
+        selectedIndex = indexPath.row
+        performSegue(withIdentifier: "kidInfo", sender: self)
     }
     
     
