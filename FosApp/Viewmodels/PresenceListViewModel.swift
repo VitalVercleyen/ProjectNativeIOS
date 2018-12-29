@@ -16,7 +16,7 @@ class PresenceListViewModel{
     init(){
         
         dataHandler = Datahandler()
-        scoutsKids = getKids()
+        getKids()
     }
     
     
@@ -36,8 +36,8 @@ class PresenceListViewModel{
         scoutsKids.remove(at: scoutsKid)
     }
     
-    func getKids() -> [ScoutsKid] {
-        return dataHandler.getKids()
+    func getKids() {
+        scoutsKids = dataHandler.getKids()
     }
     
     

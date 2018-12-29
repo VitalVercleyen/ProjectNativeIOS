@@ -16,6 +16,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
     
     
     @IBOutlet weak var searchbar: UISearchBar!
+    var refreshControl : UIRefreshControl? = nil
     let searchController = UISearchController(searchResultsController: nil)
     var scoutsKids: [ScoutsKid] = []
     var filteredScoutsKids : [ScoutsKid] = []
@@ -25,13 +26,15 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         selectedKid = nil
         selectedIndex = nil
-        scoutsKids = viewmodel.scoutsKids
-        filteredScoutsKids = scoutsKids
+        
         searchbar.barTintColor = .white
         searchbar.delegate = self
         navigationItem.hidesBackButton = true
+        
+        addRefreshControl()
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -62,11 +65,20 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         tableView.reloadData()
     }
     
+    func refresh(){
+        viewmodel.getKids()
+        scoutsKids = viewmodel.scoutsKids
+        filteredScoutsKids = scoutsKids
+    }
+    
 
     
 }
 
 extension FirstViewController : UITableViewDataSource, UITableViewDelegate{
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredScoutsKids.count
     }
@@ -78,6 +90,19 @@ extension FirstViewController : UITableViewDataSource, UITableViewDelegate{
         cell.setData(scoutsKid: scoutsKid)
         
         return cell
+    }
+    
+    func addRefreshControl(){
+        refreshControl = UIRefreshControl()
+        refreshControl?.tintColor = UIColor.red
+        refreshControl?.addTarget(self, action: #selector(refreshList), for: .valueChanged)
+        tableView.addSubview(refreshControl!)
+    }
+    
+    @objc func refreshList(){
+        refresh()
+        refreshControl?.endRefreshing()
+        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

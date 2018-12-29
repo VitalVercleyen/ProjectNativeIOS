@@ -12,12 +12,15 @@ import FirebaseFirestore
 
 class Datahandler {
     
+    
     var scoutsKids : [ScoutsKid] = []
     let db : Firestore
     
     init(){
         let settings = FirestoreSettings()
         settings.isPersistenceEnabled = true
+        
+        
         
         db = Firestore.firestore()
         db.settings = settings
@@ -26,21 +29,24 @@ class Datahandler {
     }
     
     func setupData(){
-        db.collection("ScoutsKids")
-            .addSnapshotListener { querySnapshot, error in
-                guard let documents = querySnapshot?.documents else {
-                    print("Error fetching documents: \(error!)")
-                    return
+        db.collection("ScoutsKids").whereField("tak", isEqualTo: 3).getDocuments(){
+            querySnapshot, error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                for doc in querySnapshot!.documents{
+                    let scoutsKid : ScoutsKid = ScoutsKid(id : doc.documentID, name : doc.data()["name"] as! String, gender : doc.data()["gender"] as! String, aanwezig : false, vierUurtje : false)
+                    self.scoutsKids.append(scoutsKid)
+                    
+                    
                 }
-                for doc in documents{
-                    print(doc)
-                }
+            }
         }
-
     }
     
     func getKids() -> [ScoutsKid]{
-        return scoutsKids
+        print(scoutsKids)
+        return self.scoutsKids
     }
     
 }
