@@ -20,12 +20,25 @@ class KidInfoViewController: UIViewController {
     }
     
     @IBAction func verwijderKind(_ sender: Any) {
-        viewmodel.verwijderKid(scoutsKid: selectedIndex!)
-        performSegue(withIdentifier: "presenceList", sender: self)
+        
+        let refreshAlert = UIAlertController(title: "Verwijder kind", message: "Ben je zeker dat je dit kind wilt verwijderen?", preferredStyle: UIAlertController.Style.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Jazeker", style: .default, handler: { (action: UIAlertAction!) in
+            viewmodel.verwijderKid(scoutsKid: selectedIndex!)
+            self.performSegue(withIdentifier: "presenceList", sender: self)
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "Neen", style: .cancel, handler: { (action: UIAlertAction!) in
+            
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+        
+        
     }
     
     @IBAction func wijzigKind(_ sender: Any) {
-        
+        performSegue(withIdentifier: "editKid", sender: self)
     }
     
 }

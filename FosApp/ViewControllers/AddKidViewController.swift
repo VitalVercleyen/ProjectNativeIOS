@@ -17,16 +17,20 @@ class AddKidViewController : UIViewController {
     
     
     override func viewDidLoad() {
+        if(selectedKid != nil){
+            name.text = selectedKid!.name
+        }
         super.viewDidLoad()
     }
     
     @IBAction func genderClicked(_ sender: UIButton) {
         if(!(((name.text?.isEmpty)!))){
             if(selectedKid == nil){
-                viewmodel.addKid(name: name.text ?? "kid", gender: genderMap[sender.tag]!)
+                viewmodel.addKid(name: name.text!, gender: genderMap[sender.tag]!)
                 performSegue(withIdentifier: "presenceList", sender: self)
             } else {
-               
+                viewmodel.editKid(name: name.text!, gender: genderMap[sender.tag]!, kidId: selectedKid!.id, index : selectedIndex!)
+                performSegue(withIdentifier: "presenceList", sender: self)
             }
             
         }

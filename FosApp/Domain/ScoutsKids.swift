@@ -12,10 +12,10 @@ import UIKit
 class ScoutsKid {
     let id : String
     let image : UIImage
-    let name : String
-    let gender : String
-    let aanwezig : Bool
-    let vierUurtje: Bool
+    var name : String
+    var gender : String
+    var aanwezig : Bool
+    var vierUurtje: Bool
     let genderMap = ["boy" : #imageLiteral(resourceName: "boy"), "girl" : #imageLiteral(resourceName: "girl"), "xgender" : #imageLiteral(resourceName: "xgender")]
 
     
@@ -27,4 +27,6 @@ class ScoutsKid {
         self.aanwezig = aanwezig
         self.vierUurtje = vierUurtje
     }
+    
+
 }

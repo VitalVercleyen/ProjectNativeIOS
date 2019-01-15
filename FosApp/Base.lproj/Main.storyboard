@@ -66,7 +66,7 @@
                                                             <state key="normal" image="UncheckedBox"/>
                                                             <state key="selected" image="checkedBox"/>
                                                             <connections>
-                                                                <action selector="checkBoxTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ezR-XV-4gD"/>
+                                                                <action selector="checkBoxTapped:" destination="7Pe-ga-wkt" eventType="touchUpInside" id="o9p-qi-c2O"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzX-o3-8Ex">
@@ -78,7 +78,7 @@
                                                             <state key="normal" image="UncheckedBox"/>
                                                             <state key="selected" image="checkedBox"/>
                                                             <connections>
-                                                                <action selector="checkBoxTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="cI0-nH-aMh"/>
+                                                                <action selector="checkBoxTapped:" destination="7Pe-ga-wkt" eventType="touchUpInside" id="oLD-IC-G1G"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -115,6 +115,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Voeg Toe"/>
                                         <connections>
+                                            <action selector="voegToeClicked:" destination="9pv-A4-QxB" eventType="touchUpInside" id="IKz-Bf-HrM"/>
                                             <segue destination="ErP-Rq-bGo" kind="show" id="If4-bC-7kU"/>
                                         </connections>
                                     </button>
@@ -239,6 +240,7 @@
                         <outlet property="name" destination="vWs-hH-Lqv" id="JN6-0Y-FUY"/>
                         <outlet property="portrait" destination="42w-DZ-Su2" id="jsV-oo-lZo"/>
                         <segue destination="9pv-A4-QxB" kind="show" identifier="presenceList" id="ZKb-2b-ev7"/>
+                        <segue destination="ErP-Rq-bGo" kind="show" identifier="editKid" id="f9x-g8-G5Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9f-cb-yj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -382,7 +384,8 @@ en kies het gender</string>
         <image name="xgender" width="259" height="270"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="TAv-BS-IIt"/>
         <segue reference="If4-bC-7kU"/>
-        <segue reference="Xty-w8-YSz"/>
+        <segue reference="ZKb-2b-ev7"/>
     </inferredMetricsTieBreakers>
 </document>

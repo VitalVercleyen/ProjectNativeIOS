@@ -44,6 +44,36 @@ class Datahandler {
                 }
             }
         })
+        db.collection("AanwezigKid").whereField("aanwezigheid", isEqualTo : getDateID()).addSnapshotListener({
+            querySnapshot, error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                for doc in querySnapshot!.documents{
+                    for kid in self.scoutsKids {
+                        if(kid.id == doc.data()["kid"] as! String){
+                            kid.aanwezig = doc.data()["aanwezig"] as! Bool
+                            kid.vierUurtje = doc.data()["vieruurtje"] as! Bool
+                        }
+                    }
+                }
+            }
+        })
+    }
+    
+    func editKid(id : String, name : String, gender : String, index : Int){
+        db.collection("ScoutsKids").document(id).setData([
+            "name": name,
+            "gender": gender,
+            "tak": 3
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+        
     }
     
     func deleteKid(id : String, index : Int){
@@ -73,6 +103,34 @@ class Datahandler {
         }
     }
     
+    func saveAanwezigheid(AanwezigheidID : String, date : String, scoutsKids : [ScoutsKid]){
+        db.collection("Aanwezigheden").document(AanwezigheidID).setData( [
+            "date" : date,
+            "tak" : 3
+        ]){ err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+        for kid in scoutsKids {
+            db.collection("AanwezigKid").document(kid.id + AanwezigheidID).setData([
+                "aanwezig" : kid.aanwezig,
+                "vieruurtje" : kid.vierUurtje,
+                "kid" : kid.id,
+                "aanwezigheid" : AanwezigheidID
+                
+            ]){ err in
+                if let err = err {
+                    print("Error writing document: \(err)")
+                } else {
+                    print("Document successfully written!")
+                }
+            }
+        }
+    }
+    
     func getKids() -> [ScoutsKid]{
         print(scoutsKids)
         return self.scoutsKids
@@ -86,5 +144,16 @@ class Datahandler {
         }
         return false
     }
+    
+    func getDateID() -> String{
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "ddMMyy"
+        return formatter.string(from: date)
+    }
+    
+    
+    
+    
     
 }

@@ -44,12 +44,11 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
    
     
     @IBAction func opslaan(_ sender: Any) {
+        viewmodel.saveAanwezigheid()
     }
     
     
-    @IBAction func checkBoxTapped(_ sender: UIButton){
-        sender.isSelected = !sender.isSelected
-    }
+   
     
     
     
@@ -73,6 +72,10 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
     }
     
 
+    @IBAction func voegToeClicked(_ sender: Any) {
+        selectedKid = nil
+        selectedIndex = nil
+    }
     
 }
 
