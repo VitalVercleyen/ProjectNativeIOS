@@ -17,11 +17,11 @@
 		B247A5AC218E472A00A97B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B247A5AA218E472A00A97B6E /* LaunchScreen.storyboard */; };
 		B247A5B7218E472B00A97B6E /* FosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5B6218E472B00A97B6E /* FosAppTests.swift */; };
 		B247A5C2218E472B00A97B6E /* FosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247A5C1218E472B00A97B6E /* FosAppUITests.swift */; };
+		B2550DBF21EE985E0062EB6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E99FD721D7C1A7006AC440 /* GoogleService-Info.plist */; };
 		B2E99FCF21D6574F006AC440 /* PresenceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FCE21D6574F006AC440 /* PresenceListViewModel.swift */; };
 		B2E99FD121D77D78006AC440 /* AddKidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FD021D77D78006AC440 /* AddKidViewController.swift */; };
 		B2E99FD321D791BC006AC440 /* KidInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FD221D791BC006AC440 /* KidInfoViewController.swift */; };
 		B2E99FD621D7A9B2006AC440 /* Datahandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E99FD521D7A9B2006AC440 /* Datahandler.swift */; };
-		B2E99FD821D7C1A7006AC440 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E99FD721D7C1A7006AC440 /* GoogleService-Info.plist */; };
 		E35AF59B23033136461E3923 /* Pods_FosAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3485A84E60723351BBEE1 /* Pods_FosAppUITests.framework */; };
 		FB4784CA8CF069F96540B049 /* Pods_FosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232231B51183AB8B9A5FEE7E /* Pods_FosApp.framework */; };
 /* End PBXBuildFile section */
@@ -67,7 +67,7 @@
 		B2E99FD021D77D78006AC440 /* AddKidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKidViewController.swift; sourceTree = "<group>"; };
 		B2E99FD221D791BC006AC440 /* KidInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidInfoViewController.swift; sourceTree = "<group>"; };
 		B2E99FD521D7A9B2006AC440 /* Datahandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datahandler.swift; sourceTree = "<group>"; };
-		B2E99FD721D7C1A7006AC440 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B2E99FD721D7C1A7006AC440 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDFF7F44A9091C70134D82B3 /* Pods-FosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FosApp/Pods-FosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C0EF602F95A7D541155B3E84 /* Pods-FosAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FosAppUITests/Pods-FosAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CDDFCB5E122DAA4DC3485C7C /* Pods-FosAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FosAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FosAppUITests/Pods-FosAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -335,7 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B247A5AC218E472A00A97B6E /* LaunchScreen.storyboard in Resources */,
-				B2E99FD821D7C1A7006AC440 /* GoogleService-Info.plist in Resources */,
+				B2550DBF21EE985E0062EB6F /* GoogleService-Info.plist in Resources */,
 				B247A5A9218E472A00A97B6E /* Assets.xcassets in Resources */,
 				B247A5A7218E472600A97B6E /* Main.storyboard in Resources */,
 			);
