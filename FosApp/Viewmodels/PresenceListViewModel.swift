@@ -75,6 +75,16 @@ class PresenceListViewModel{
         return formatter.string(from: date)
     }
     
+    func getAanwezigAmount() -> Int{
+        var counter = 0
+        for kid in scoutsKids {
+            if(kid.aanwezig){
+                counter += 1
+            }
+        }
+        return counter
+    }
+    
     
     /*func createArray() -> [ScoutsKid] {
         var tempScoutsKids: [ScoutsKid] = []
