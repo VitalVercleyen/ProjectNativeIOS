@@ -21,7 +21,7 @@ class AddKidViewController : UIViewController {
     }
     
     @IBAction func genderClicked(_ sender: UIButton) {
-        if(!((name.text?.isEmpty)!)){
+        if(!(((name.text?.isEmpty)!))){
             if(selectedKid == nil){
                 viewmodel.addKid(name: name.text ?? "kid", gender: genderMap[sender.tag]!)
                 performSegue(withIdentifier: "presenceList", sender: self)

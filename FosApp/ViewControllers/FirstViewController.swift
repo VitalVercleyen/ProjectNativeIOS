@@ -35,6 +35,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
         navigationItem.hidesBackButton = true
         
         addRefreshControl()
+        refresh()
         
         tableView.delegate = self
         tableView.dataSource = self

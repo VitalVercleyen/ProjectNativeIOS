@@ -21,10 +21,7 @@ class PresenceListViewModel{
     
     
     func addKid(name : String, gender : String){
-        let scoutsKid = ScoutsKid(id : "", name : name, gender : gender, aanwezig : false, vierUurtje : false)
-        print(name)
-        scoutsKids.append(scoutsKid)
-        
+        dataHandler.addKid(name: name, gender: gender)
     }
     
     func editKid(name : String, gender : String, kid : ScoutsKid, index : Int){
@@ -33,6 +30,8 @@ class PresenceListViewModel{
     }
     
     func verwijderKid(scoutsKid : Int){
+        let scoutsKidObj = scoutsKids[scoutsKid]
+        dataHandler.deleteKid(id: scoutsKidObj.id, index : scoutsKid)
         scoutsKids.remove(at: scoutsKid)
     }
     
